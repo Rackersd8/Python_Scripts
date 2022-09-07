@@ -170,7 +170,7 @@ macs_not_to_kick_off = list()
 
 while True:
     print("Please enter the MAC Address(es) of the device(s) you don't want to kick off the network.")
-    macs = input("Please use a comma separated list if more than one. : ")
+    macs = input("Please use a comma separated list if more than one.":"")
     macs_not_to_kick_off = mac_address_regex.findall(macs)
     macs_not_to_kick_off = [mac.upper() for mac in macs_not_to_kick_off]
 
