@@ -66,7 +66,7 @@ def backup_csv():
     """Move all .csv files in the directory to a new backup folder."""
     for file_name in os.listdir():
 
-        if ".csv" in file_name():
+        if ".csv" in file_name:
             print("There shouldn't be any .csv files in your directory. We found .csv files in your directory.")
 
             directory = os.getcwd()
