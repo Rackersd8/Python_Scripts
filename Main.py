@@ -14,7 +14,7 @@ import threading
 
 import time
 
-from pyfiglet import Figlet
+import pyfiglet
 
 
 def in_sudo_mode():
@@ -164,8 +164,7 @@ def deauth_attack(network_mac, target_mac, interface):
 mac_address_regex = re.compile(r'(?:[0-9a-fA-F]:?){12}')
 wlan_code = re.compile("Interface (wlan[0-9]+)")
 
-f = Figlet(font='5lineoblique')
-print(f.renderText('WiFi_DoS'))
+pyfiglet.print_figlet("WiFi DoS")
 
 in_sudo_mode()
 
